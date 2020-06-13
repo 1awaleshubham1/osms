@@ -1,0 +1,82 @@
+/*change Brand name font*/
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+/*change navigation color*/
+.navbar #myMenu .custom-nav .nav-item a {
+    color: #ffffff;
+}
+a{
+    color:black;
+}
+.active{
+    color:white;
+    background-color: #dc3545;
+}
+
+a:hover{
+    color:#f26571;
+}
+.navbar #myMenu .custom-nav .nav-item a:hover {
+    color:#f0aab1;
+}
+/*youtube facebook color to red*/
+.fi-color{
+    color:#dc3545;
+}
+.fi-color:hover{
+    color: #e994a2;
+}
+
+/*make header image responsive*/
+.back-image{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    margin-top:74px;
+}
+
+/*Header Image sub-title*/
+.mainHeading{
+    margin-top:350px;
+}
+@media only screen and (max-width:600px)
+{
+.main-class{
+    margin-top:350px;
+    text-align:center;
+}
+}
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+}
